@@ -1,0 +1,51 @@
+<!--miniprogram/pages/sessionList/sessionList.wxml-->
+<view class = "container">
+<view class = "bar">
+  <text class="left">Rawbert</text>
+  <text class="right"></text>
+</view>
+<view class = "top-container">
+  <text class = "title"> {{courseTitle}} </text>
+  <text class = "courseID">{{courseID}}</text>
+</view>
+<view class = "lower-container">
+  <view class = "tag" bindtap="clickIntro">
+    <view class = "tag-title">Intro</view>
+    <view class = "tag-sign">{{introSign}}</view>
+  </view>
+  <view wx:if = "{{openIntro}}" class = "courseIntro">{{courseIntro}}</view>
+  <block wx:for = "{{groupings}}" wx:for-item = "group">
+    <view class = "tag" bindtap="clickTag" data-index = "{{group.index}}">
+      <view class = "tag-title">{{group.component}}</view>
+      <view class = "tag-sign">{{group.sign}}</view>
+    </view>
+    <block wx:for = "{{group.sessionList}}" wx:for-item = "session"  wx:if = "{{group.open}}" >
+    <view style = "height: 30%; width: 200rpx; margin-left: 40rpx; margin-top: 10rpx;text-align: center; font-size: 30rpx; color:{{session.status_color}};">{{session.status}}</view>
+      <view class = "session-container">
+        <view class = "minor-info">
+          <view class = "other">{{session.class_num}}</view>
+          <view class = "other">section {{session.section}}</view>
+          <view class = "other">{{session.units}} units</view>
+          <view class = "other">{{session.instruction_mode}}</view>
+          <view class = "other">{{session.grading}}</view>
+        </view>
+        <view class = "major-info">
+          <view class = "inner-box">
+            <text class = "name">Instructor</text>
+            <text class = "content">{{session.instructor}}</text>
+          </view>
+          <view class = "inner-box">
+            <text class = "name">Time</text>
+            <text class = "content">{{session.time}}</text>
+          </view>
+          <view class = "inner-box">
+            <text class = "name">Location</text>
+            <text class = "content">{{session.room}} {{session.location}}</text>
+          </view>
+        </view>
+      </view>
+    </block>
+  </block>
+</view>
+</view>
+

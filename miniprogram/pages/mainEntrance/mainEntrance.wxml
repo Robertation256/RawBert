@@ -1,0 +1,12 @@
+<!--miniprogram/pages/mainEntrance.wxml-->
+<view class = "upperBar">
+  <text class="left">Rawbert</text>
+  <text class="right"></text>
+</view>
+
+<view class = "buttonArea">
+  <text class="bulletin">RawBert, your Albert at hand. 
+  \nPlease refer to Albert in case of differences </text>
+  <navigator class="button" url="../browseBySubject/browseBySubject"> Course Browse</navigator>
+  <navigator class="button"> Degree Requirement</navigator>
+</view>

@@ -1,0 +1,18 @@
+<!--miniprogram/pages/subjectCourseList/subjectCourseList.wxml-->
+<view class = "bar">
+  <text class="left">Rawbert</text>
+  <text class="right"></text>
+</view>
+<view >
+  <text style="margin-left: 15rpx; width:30rpx; font-size:40rpx; background-color: black">|</text>
+  <text class = "title">{{subject}}</text>
+</view>
+<view class = "course-container">
+  <block wx:for = "{{course_list}}" >
+    <navigator class = "course-box" url = "../sessionList/sessionList?courseID={{item.courseID}}&title={{item.title}}&intro={{item.intro}}"> 
+      <view class = "course-ID">{{item.courseID}}</view>
+      <view class = "course-title">{{item.title}}</view>
+    </navigator>
+  </block>
+</view>
+

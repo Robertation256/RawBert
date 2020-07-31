@@ -1,0 +1,54 @@
+/* miniprogram/pages/mainEntrance.wxss */
+.upperBar {
+  width: 750rpx;
+  height: 250rpx;
+  display: flex;
+}
+
+.upperBar .left {
+  width: 90%;
+  height: 100%;
+  padding-left: 40rpx;
+  line-height: 240rpx;
+  font-weight: bold;
+  font-size: 90rpx;
+  background-color: black;
+  color: white;
+}
+
+.upperBar .right {
+  width: 10%;
+  height: 100%;
+  background-color: purple;
+}
+.buttonArea {
+  width: 700rpx;
+  height: 600rpx;
+  margin-top: 100rpx;
+  margin-left: 25rpx;
+  margin-right: 25rpx;
+  display: flex;
+  flex-direction: column;
+  
+  border-style: solid;
+  box-shadow:0px 2px 4px 2px #DDDDDD;
+  border-width: 0rpx;
+  background-color: #F6F6F6;
+}
+.buttonArea .bulletin {
+  margin-left: 30rpx;
+  margin-top: 40rpx;
+  font-size: 20rpx;
+}
+.buttonArea .button {
+  width: 500rpx;
+  height: 100rpx;
+  margin-top: 80rpx;
+  margin-left: 100rpx;
+  border: #15A885 solid 4rpx;  
+  text-align: center;
+  line-height: 100rpx;
+  font-weight: 700;
+  font-size: 40rpx;
+  color: #15A885;
+}

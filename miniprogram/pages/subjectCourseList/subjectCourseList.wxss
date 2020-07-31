@@ -1,0 +1,61 @@
+/* miniprogram/pages/subjectCourseList/subjectCourseList.wxss */
+.title {
+  height: 100rpx;
+  width:  400rpx;
+  margin-top: 20rpx;
+  margin-left: 10rpx;
+  line-height: 100rpx;
+  font-weight: 700;
+  font-size: 40rpx;
+  color: black;
+}
+
+.background {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+}
+
+.course-container {
+  height:auto;
+  width: 700rpx;
+  margin-left: 25rpx;
+  display: flex;
+  flex-direction: column;
+  border-style: solid;
+  box-shadow:0px 2px 4px 2px #DDDDDD;
+  border-width: 0rpx;
+  background-color: #F6F6F6;
+}
+
+.course-box {
+  height: 200rpx;
+  width: 650rpx;
+  margin-top: 20rpx;
+  margin-left: 25rpx;
+  border: black solid 5rpx;
+  display: flex;
+  border-left: #F62B14 solid 20rpx;
+}
+
+.course-ID {
+  height: 20%;
+  width: 30%;
+  font-size: 20rpx;
+  font-weight: 600;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+}
+
+.course-title {
+  height: 100%;
+  width: 70%;
+  font-size: auto;
+  font-weight: bold;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+  margin-right: 20rpx;
+  color: #2C2B30;
+  text-align: left;
+}

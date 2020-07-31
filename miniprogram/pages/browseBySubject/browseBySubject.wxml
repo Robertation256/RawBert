@@ -1,0 +1,22 @@
+<!--miniprogram/pages/browseBySubject/browseBySubject.wxml-->
+
+<view class = "bar">
+  <text class="left">Rawbert</text>
+  <text class="right"></text>
+</view>
+<view >
+  <text style="margin-left: 15rpx; width:30rpx; font-size:40rpx; background-color: black">|</text>
+  <text class = "title">Browse by Subject</text>
+</view>
+<view class = "campus-box">
+  <view class = "campus-name">NYUSH</view>
+  <view class = "subject-box">
+    <block wx:for = "{{subject}}">
+      <navigator class = "subject" url = "../subjectCourseList/subjectCourseList?subject={{item}}">
+      <view class = "colorBar"></view>
+      <view class = "subject-name">{{item}}</view>
+      </navigator>
+    </block>
+  </view>
+</view>
+
